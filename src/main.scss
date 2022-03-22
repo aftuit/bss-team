@@ -1,0 +1,53 @@
+// COLORS
+$main-blue: #0e1e5e;
+$main-orange: #f6b565;
+
+// FONTS
+
+@font-face {
+  font-family: "Montserrat-light";
+  src: url("./assets/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-regular";
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-medium";
+  src: url("./assets/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+
+.f-light {
+  font-family: "Montserrat-light", sans-serif;
+}
+.f-regular {
+  font-family: "Montserrat-regular", sans-serif;
+}
+.f-medium {
+  font-family: "Montserrat-medium", sans-serif;
+}
+.f-bold {
+  font-family: "Montserrat-bold", sans-serif;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  body {
+    overflow-x: hidden;
+
+  }
+}

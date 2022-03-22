@@ -1,0 +1,25 @@
+@import "../../main.scss";
+.structure-content {
+  .information {
+    margin-top: 36px;
+  }
+
+  .row {
+    margin: 32px auto 0;
+    h3 {
+      color: $main-orange;
+    }
+    .col {
+      position: relative;
+      .v-line {
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #b1abab;
+      }
+    }
+  }
+}

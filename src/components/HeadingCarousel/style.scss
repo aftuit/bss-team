@@ -1,0 +1,68 @@
+@import "../../main.scss";
+.heading-carousel-content {
+  position: relative;
+  background: {
+    image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+      url("../../assets/img/maintop2.jpg");
+    mask-repeat: no-repeat;
+    repeat: no-repeat;
+    size: 100% 100%;
+    attachment: fixed;
+  }
+  .carousel-item {
+    opacity: 1;
+    height: 100vh;
+    display: flex !important;
+    flex-direction: column;
+    width: 100vw;
+    .wallpaper-content {
+      margin-top: auto;
+      margin-bottom: auto;
+      .content {
+        margin-top: 50vh;
+        width: 670px;
+        display: block;
+        color: #fff;
+        h1 {
+          font-size: 35px;
+          text-transform: uppercase;
+        }
+        p {
+          margin-top: 15px;
+          font-size: 18px;
+        }
+        .bottom {
+          margin-top: 45px;
+
+          button {
+            background-color: $main-orange;
+            color: #fff;
+            padding: 1.5vh 4.2vh;
+          }
+          a {
+            color: #fff;
+            margin-left: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            position: relative;
+            &::after {
+              content: "→";
+              position: absolute;
+              opacity: 0;
+              transition: all 0.2s linear;
+            }
+            &:hover {
+              &::after {
+                opacity: 1;
+                margin-left: 5px;
+              }
+            }
+            svg {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

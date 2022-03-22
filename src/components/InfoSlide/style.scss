@@ -1,0 +1,84 @@
+@import "../../main.scss";
+
+.InfoSlide-content {
+  .container {
+    margin-top: 55px;
+    border-radius: 45px 0 45px 0;
+    border: 1px solid #0c194b3b;
+    overflow: hidden;
+    padding: 0;
+    .row {
+      padding: 0;
+      img {
+        object-fit: cover;
+        height: 400px;
+      }
+      h2 {
+        font-size: 35px;
+        margin-top: 15px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  ul.slick-dots {
+    top: 1%;
+    text-align: end;
+
+    li {
+      //   width: fit-content;
+      margin: 0 5px;
+      button {
+        width: 10px;
+        height: 10px;
+        border-radius: 20px;
+        margin: 0 auto;
+        border: 1px solid $main-blue;
+        transition: all 0.2s linear;
+        &:hover {
+          background-color: $main-blue;
+        }
+        &::before {
+          display: none;
+        }
+      }
+      &.slick-active {
+        button {
+          width: 25px;
+          background-color: $main-blue;
+        }
+      }
+    }
+  }
+  button {
+    width: 38px;
+    height: 38px;
+    border: 1px solid $main-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 233;
+    transition: all 0.2s linear;
+    &.slick-prev {
+      left: -5%;
+      &::before {
+        color: $main-blue;
+        font-family: "Montserrat-bold";
+        font-size: 22px;
+        margin: 0;
+      }
+    }
+    &.slick-next {
+      right: -5%;
+      &::before {
+        color: $main-blue;
+        font-family: "Montserrat-bold";
+        font-size: 22px;
+        margin: 0;
+      }
+    }
+  }
+}
