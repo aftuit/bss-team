@@ -1,0 +1,65 @@
+@import "../../main.scss";
+
+.apartments{
+
+  .row{
+    &.wrap{
+      margin-top: 80px;
+      .col{
+      .select-group{
+        display: flex;
+        justify-content: space-between;
+        select{
+          width: 48%;
+          padding: 10px 15px;
+          outline: none;
+          border: 1px solid $main-blue;
+          color: $main-blue;
+          border-radius: 4px;
+        }
+      }
+      .apart-card{
+        border: 1px solid $main-blue;
+        border-radius: 4px;
+        .apart-card-header{
+          padding: 15px;
+          h2{
+            font-size: 23px;
+            margin: 0;
+          }
+          border-bottom: 1px dotted $main-blue;
+        }
+        .apart-card-body{
+          .price-row{
+            padding: 15px;
+            border-bottom: 1px dotted $main-blue;
+            margin: 0;
+          }
+          .size-row{
+            padding: 15px;
+            border-bottom: 1px dotted $main-blue;
+            margin: 0;
+          }
+        }
+        .apart-card-footer{
+          padding: 10px 20px;
+          button{
+            background: $main-blue;
+          }
+        }
+
+      }
+        .items{
+          width: 100%;
+          img{
+          height: 570px;
+            width: 100%;
+          }
+
+        }
+      }
+
+
+    }
+  }
+}

@@ -1,6 +1,7 @@
 @import "../../main.scss";
 
 .InfoSlide-content {
+  margin-top: 80px;
   .container {
     margin-top: 55px;
     border-radius: 45px 0 45px 0;
@@ -63,19 +64,19 @@
     z-index: 233;
     transition: all 0.2s linear;
     &.slick-prev {
-      left: -5%;
+      left: -6%;
       &::before {
         color: $main-blue;
-        font-family: "Montserrat-bold";
+        font-family: "Montserrat-bold", sans-serif;
         font-size: 22px;
         margin: 0;
       }
     }
     &.slick-next {
-      right: -5%;
+      right: -6%;
       &::before {
         color: $main-blue;
-        font-family: "Montserrat-bold";
+        font-family: "Montserrat-bold", sans-serif;
         font-size: 22px;
         margin: 0;
       }

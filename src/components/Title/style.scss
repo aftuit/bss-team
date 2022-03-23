@@ -1,22 +1,23 @@
 @import "../../main.scss";
 
 .title-wrap{
+  margin: 50px 0;
    h1{
        text-transform: uppercase;
-       text-align: center;
        font-weight: 800;
        color: $main-blue;
-   }
-   .line-vr{
-       width: 2px;
-       height: 80px;
-       margin: 20px auto 0;
-       &.blue{
-           background-color: $main-blue;
-       }
-       &.orange{
-           background-color: $main-orange;
-       }
+      font-size: 5vh;
+     padding-left: 40px;
+     position: relative;
+     &::before{
+       content: "";
+       position: absolute;
+       left: 0;
+       width: 15px;
+       height: 100px;
+       top: 0;
+       background: $main-orange;
+     }
    }
 
 }

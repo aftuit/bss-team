@@ -1,18 +1,22 @@
 import React from "react"
+import Title from "../Title/Title";
+import {connect} from "react-redux";
 import "./style.scss";
 
 const Advantages = () => {
     return (
         <div className="advantages-content">
-            Advantages
-            <h1 className="text-dark">dsadasdasd</h1>
-            <h1 className="text-dark">dsadasdasd</h1>
-            <h1 className="text-dark">dsadasdasd</h1>
-            <h1 className="text-dark">dsadasdasd</h1>
-            <h1 className="text-dark">dsadasdasd</h1>
-        </div>
+            <Title title={"Преимущества"} clr={"blue"}/>
+                <div className="advantage">
+
+                </div>
+         </div>
     )
 }
+const mapStateToProps = (state) => {
+    return {
 
+    }
+}
 
-export default Advantages;
+export default connect(mapStateToProps, null)(Advantages);

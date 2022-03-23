@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick/lib/slider';
 import Title from "../Title/Title";
+import Information from "../Information/Information";
 import { Link } from 'react-router-dom';
 import "./style.scss";
 
@@ -49,6 +50,8 @@ const InfoSlide = () => {
                     })
                 }
             </Slider>
+
+            <Information mt={true} title={"title"} info={"По задумке архитекторов, вдохновлённых горными вершинами Узбекистана, комплекс олицетворяет плавность, свежесть и бесконечность. Высота зданий будет напоминать рельеф гор, вершины которых то возвышаются, то уменьшаются. Основной целью разработки этого проекта было создание жилых помещений высокого класса со всеми социально важными объектами внутри."}/>
         </div>
     )
 }
